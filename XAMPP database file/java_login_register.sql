@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 23, 2020 at 02:09 PM
--- Server version: 10.4.14-MariaDB
--- PHP Version: 7.4.9
+-- Generation Time: Jun 13, 2023 at 09:29 AM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `java_login_register`
 --
-CREATE DATABASE IF NOT EXISTS `java_login_register` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `java_login_register`;
 
 -- --------------------------------------------------------
 
@@ -90,7 +88,6 @@ INSERT INTO `order_items_list` (`ol_id`, `o_id`, `u_id`, `food_name`, `quantity`
 (26, 17, 3, 'Pepsi (500 ml)', 1, 60, 60),
 (27, 17, 3, 'Chocolate Brownie cake', 2, 99, 198),
 (28, 18, 3, 'Margherita pizza', 1, 199, 199),
-(29, 21, 4, 'Paneer Noodles', 1, 89, 89),
 (30, 24, 5, 'Veg Pulao', 2, 90, 180),
 (31, 24, 5, 'Ghee Rice', 1, 99, 99);
 
@@ -122,7 +119,6 @@ INSERT INTO `order_list` (`o_id`, `u_id`, `date_and_time`, `items`, `address`, `
 (16, 1, '2020-10-21 03:19:48', '3 items', 'No: 42, KGF Nagar, Vellore, Tamil Nadu 632007', 'UPI(a1b2c3@ybi)', 874),
 (17, 3, '2020-10-21 03:25:20', '4 items', 'No.45, New York,\nAmerica.', 'Pay On Delivery', 911),
 (18, 3, '2020-10-21 03:40:41', '1 items', 'New York,\r\nAmerica.', 'Pay On Delivery', 199),
-(21, 4, '2020-10-21 13:20:59', '1 items', 'No. 13, katpadi, Vellore.', 'UPI(simma@upi)', 89),
 (24, 5, '2020-10-23 02:43:44', '2 items', 'No, 15, katpadi, vellore', 'UPI(meeraj441@upi)', 279);
 
 -- --------------------------------------------------------
@@ -150,8 +146,7 @@ CREATE TABLE `the_app_users` (
 INSERT INTO `the_app_users` (`u_id`, `u_fname`, `u_lname`, `u_uname`, `u_pass`, `u_bdate`, `u_address`, `u_phone`, `u_mail`) VALUES
 (1, 'fn1', 'ln1', 'un1', 'pass1', '2020-10-02', 'No: 12, PCK Nagar, Vellore, Tamil Nadu 632007', '7123456780', 'efg@gmail.com'),
 (3, 'Adam', 'Smith', 'Adam', 'pass1', '1973-05-03', 'New York,\nAmerica.', '9876543210', 'adam.smith@gmail.com'),
-(4, 'Simma', 'Vakeeswar', 'simma', 'pass123', '2001-10-07', 'No. 12, katpadi, Vellore.', '9003607783', 'simma@gmail.com'),
-(5, 'Meeraj', 'R', 'meeraj', 'pass123', '2020-10-06', 'katpadi, vellore', '8015071366', 'meeraj441@gmail.com');
+(5, 'Meeraj', 'R', 'meeraj', 'pass123', '2020-10-06', 'katpadi, vellore', '8234567896', 'meeraj441@gmail.com');
 
 --
 -- Indexes for dumped tables
